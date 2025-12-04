@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex.soln.v41.html-UltraEdit-Web.PageCopy</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(255, 255, 255);
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+        margin: 0;
+        padding: 10px;
+      }
+
+      .logo img {
+        width: 165px;
+      }
+      nav ul {
+        display: flex;
+        gap: 1.7rem;
+        flex-wrap: wrap;
+      }
+      nav ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+
+      option {
+        list-style: none;
+        text-decoration: none;
+        background-color: red;
+      }
+      .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        margin: 70px;
+        font-family: sans-serif;
+      }
+      .first span {
+        font-size: 40px;
+      }
+      .first p {
+        width: 44vw;
+        font-size: 23px;
+        text-align: center;
+      }
+      .btn {
+        background-color: #00b6d1;
+        padding: 14px 16px;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 700;
+        margin: 12px 0;
+        cursor: pointer;
+      }
+      .btn a{
+        text-decoration: none;
+        color: white;
+      }
+      .green {
+        background-color: rgb(32, 177, 32);
+      }
+
+      .download {
+      }
+      .small {
+        font-size: 20px;
+      }
+      .second {
+        max-width: 70vw;
+        margin: auto;
+        
+      
+      }
+      .item {
+        padding: 23px;
+        border-radius: 15px;
+        background: #f9f9f9;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      .item-lang {
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 36px;
+      }
+      .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+
+      }
+    .second .me{
+      font-size: 30px;
+    }
+  .download{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: serif;
+    padding: 20px;
+  }
+  
+@media screen and (max-width:945px) {
+   .grid{
+  
+        
+        grid-template-columns: 1fr;
+        
+   }
+} 
+
+
+
+       
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Site-Logo.png"
+            alt=""
+          />
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <a href="products">Products</a
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="14"
+                height="24"
+                color="currentColor"
+                fill="none"
+                stroke="#141B34"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                />
+              </svg>
+            </li>
+            <li>
+              <a href="products">Pricing</a
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="14"
+                height="24"
+                color="currentColor"
+                fill="none"
+                stroke="#141B34"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                />
+              </svg>
+            </li>
+            <li>
+              <a href="products">Resources</a
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="14"
+                height="24"
+                color="currentColor"
+                fill="none"
+                stroke="#141B34"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                />
+              </svg>
+            </li>
+            <li>
+              <a href="products">About us</a
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="14"
+                height="24"
+                color="currentColor"
+                fill="none"
+                stroke="#141B34"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="first">
+        <span>
+          Download <b> UltraEdit </b> for Windows
+
+          <img
+            src="https://www.ultraedit.com/wp-content/uploads/2023/01/image-1-1-1.svg"
+            alt=""
+          />
+        </span>
+        <p>
+          Download and try <b>UltraEdit</b> before you buy it! This download
+          includes the full Windows version of the text editor.
+        </p>
+        <div>
+          <button class="btn"><a href="ue_allinone.exe"> Download Mac or Linux version </a> </button>
+        </div>
+      </section>
+
+      <section class="second">
+        <div class="download">
+          <span class="me">Download UltraEdit</span>
+          <span class="small">
+            v2025.1 (released 2025-10-10) | Latest changes</span
+          >
+        </div>
+        <div class="grid">
+          <div class="item">
+            <div class="item-lang">English</div>
+            <button class="btn blue"><a href="ue_allinone.exe" >Download 32-bit </a> </button>
+            <button class="btn green"> <a href="ue_allinone.exe">Download 64-bit </a> </button>
+          </div>
+          <div class="item">
+            <div class="item-lang">Hindi</div>
+            <button class="btn blue"><a href="ue_allinone.exe"><a href="ue_allinone.exe"></a>  Download 32-bit </a> </button>
+            <button class="btn green">Download 64-bit</button>
+          </div>
+          <div class="item">
+            <div class="item-lang">Nepali</div>
+            <button class="btn blue"><a href="ue_allinone.exe"> Download 32-bit</a></button>
+            <button class="btn green"><a href="ue_allinone.exe"> Download 64-bit</a></button>
+          </div>
+          <div class="item">
+            <div class="item-lang">Sanskirt</div>
+            <button class="btn blue"><a href="ue_allinone.exe"> Download 32-bit</a></button>
+            <button class="btn green"><a href="ue_allinone.exe"> Download 64-bit</a></button>
+          </div>
+          <div class="item">
+            <div class="item-lang">Japanese</div>
+            <button class="btn blue"><a href="ue_allinone.exe"> Download 32-bit</a></button>
+            <button class="btn green"><a href="ue_allinone.exe"> Download 64-bit</a></button>
+          </div>
+
+          <div class="item">
+            <div class="item-lang">Chinese</div>
+            <button class="btn blue"><a href="ue_allinone.exe"> Download 32-bit</a></button>
+            <button class="btn green"><a href="ue_allinone.exe"> Download 64-bit</a></button>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    
+  </body>
+</html>
